@@ -1,0 +1,53 @@
+{
+  "name": "turnbackbot",
+  "version": "1.0.0",
+  "description": "Production-ready Solana CLI for manual fee claims and buybacks with trade feed",
+  "main": "dist/index.js",
+  "bin": {
+    "turnbackbot": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts",
+    "clean": "rimraf dist",
+    "prebuild": "npm run clean",
+    "test:status": "npm start -- status",
+    "test:feed": "npm start -- feed --mint $npm_config_mint --limit 5",
+    "convert:keypair": "node scripts/keypair-to-base58.js"
+  },
+  "keywords": [
+    "solana",
+    "cli",
+    "buyback",
+    "jupiter",
+    "trading"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@solana/web3.js": "^1.95.3",
+    "@solana/spl-token": "^0.4.8",
+    "bs58": "^5.0.0",
+    "dotenv": "^16.4.5",
+    "commander": "^12.0.0",
+    "chalk": "^4.1.2",
+    "ora": "^5.4.1",
+    "boxen": "^5.1.2",
+    "figlet": "^1.7.0",
+    "gradient-string": "^2.0.2",
+    "winston": "^3.13.0",
+    "undici": "^6.19.8"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.9",
+    "@types/figlet": "^1.5.8",
+    "@types/gradient-string": "^1.1.5",
+    "typescript": "^5.5.2",
+    "ts-node": "^10.9.2",
+    "rimraf": "^5.0.7"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
