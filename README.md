@@ -4,8 +4,8 @@ Production-ready Node.js CLI tool for Solana token projects to manually claim cr
 
 ## Features
 
-- **Manual Fee Claims**: Transfer accumulated fees (SOL or SPL tokens) with safety checks
-- **Manual Buybacks**: Execute token buybacks via Jupiter aggregator with best routing
+- **Auto Fee Claims**: Transfer accumulated fees (SOL or SPL tokens) with safety checks
+- **Auto Buybacks**: Execute token buybacks via Jupiter aggregator with best routing
 - **Trade Feed**: Monitor recent buyers and sellers from on-chain transactions
 - **Multiple RPC Support**: Switch between Helius, RPC Pool, and Phantom RPCs
 - **Beautiful CLI**: Gradient banner, clean logs, and elegant output
