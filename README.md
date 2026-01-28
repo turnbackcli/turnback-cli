@@ -55,8 +55,11 @@ RPC_URL=https://lauraine-qytyxk-fast-mainnet.helius-rpc.com/
 FEE_WALLET_PRIVATE_KEY=your_base58_private_key_here
 
 # Token Configuration
-TARGET_MINT=YourTokenMintAddressHere
-INPUT_MINT=EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v
+TARGET_MINT=TokenMintAddressHere
+# INPUT_MINT: Token to swap FROM (default: SOL - Wrapped SOL)
+# So11111111111111111111111111111111111111112 = SOL (Wrapped SOL)
+# EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v = USDC
+INPUT_MINT=So11111111111111111111111111111111111111112
 
 # Trading Parameters
 SLIPPAGE_BPS=100
